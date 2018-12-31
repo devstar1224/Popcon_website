@@ -40,6 +40,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="../../../">Home</a></li>
+                <li><a href="javascript:alert('not yet ready this page')">Notice</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -73,65 +74,47 @@
     <div class="container marketing" style="margin-top : 80px">
       <div class="row">
       <span class="label label-default">Prefix : <span class="label label-primary">></span></span>
-      <span class="label label-primary">Version : <span class="label label-info">1.0.0</span></span>
-      <span class="label label-danger">License : <span class="label label-warning">Apache License 2.0</span></span>
+      <span class="label label-primary">Version : <span class="label label-info">1.1.1</span></span>
+      <span class="label label-danger">License : <span class="label label-warning">Mozilla Public License 2.0</span></span>
       <br> <br>
 
       <div class="panel panel-default">
         <div class="panel-heading">Default Commands</div>
         <ul class="list-group">
-          <li class="list-group-item"><code>>about</code> - shows info about the bot</li>
-          <li class="list-group-item"><code>>ping</code> - checks the bot's latency</li>
-          <li class="list-group-item"><code>>settings</code> - shows the bots settings</li>
+          <li class="list-group-item"><code>>ping</code> - You can check bot current connection </li>
+          <li class="list-group-item"><code>>help</code> - Give commands how to use a bot</li>
         </ul>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">Music</div>
         <ul class="list-group">
-          <li class="list-group-item"><code>>nowplaying</code> - shows the song that is currently playing</li>
-          <li class="list-group-item"><code>>play &lttitle|URL|subcommand&gt</code> - plays the provided song</li>
-          <li class="list-group-item"><code>>playlists</code> - shows the available playlists</li>
-          <li class="list-group-item"><code>>q [pagenum]</code> - shows the current queue</li>
-          <li class="list-group-item"><code>>remove &ltposition|ALL&gt</code> - removes a song from the queue</li>
-          <li class="list-group-item"><code>>p &ltquery&gt</code> - searches Youtube for a provided query</li>
-          <li class="list-group-item"><code>>scsearch &ltquery&gt</code> - searches Soundcloud for a provided query</li>
-          <li class="list-group-item"><code>>shuffle</code> - shuffles songs you have added</li>
-          <li class="list-group-item"><code>>s</code> - votes to skip the current song</li>
+          <li class="list-group-item"><code>>p</code> - Search YouTube to find and play the music that you type</li>
+          <li class="list-group-item"><code>>q</code> - You can see the music that I have reserved so far</li>
+          <li class="list-group-item"><code>>s</code> - You can vote current play music to skip</li>
         </ul>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">DJ</div>
         <ul class="list-group">
-          <li class="list-group-item"><code>>fs</code> - skips the current song</li>
-          <li class="list-group-item"><code>>pause</code> - pauses the current song</li>
-          <li class="list-group-item"><code>>repeat [on|off]</code> - re-adds music to the queue when finished</li>
-          <li class="list-group-item"><code>>skipto &ltposition&gt</code> - skips to the specified song</li>
-          <li class="list-group-item"><code>>stop</code> - stops the current song and clears the queue</li>
-          <li class="list-group-item"><code>>volume [0-150]</code> - sets or shows volume</li>
+          <li class="list-group-item"><code>>fs</code> - Force the currently playing music to be skipped / Server management only</li>
+          <li class="list-group-item"><code>>volume [0 ~ 200]</code> - Adjust the volume of music / Server management only</li>
         </ul>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">Admin</div>
+        <li class="list-group-item"><code>>setdj [Tags]</code> - This is the function to point as a DJ for the bot. / Server management only</li>
         <ul class="list-group">
-          <li class="list-group-item"><code>>setdj &ltrolename|NONE&gt</code> - sets the DJ role for certain music commands</li>
-          <li class="list-group-item"><code>>settc &ltchannel|NONE&gt</code> - sets the text channel for music commands</li>
-          <li class="list-group-item"><code>>setvc &ltchannel|NONE&gt</code>- sets the voice channel for playing music</li>
+
         </ul>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">Owner</div>
         <ul class="list-group">
-          <li class="list-group-item"><code>>autoplaylist &ltname|NONE&gt</code> - sets the default playlist for the server</li>
-          <li class="list-group-item"><code>>playlist &ltappend|delete|make|setdefault&gt</code> - playlist management</li>
-          <li class="list-group-item"><code>>setavatar &lturl&gt</code> - sets the avatar of the bot</li>
-          <li class="list-group-item"><code>>setgame [action] [game]</code> - sets the game the bot is playing</li>
-          <li class="list-group-item"><code>>setname &ltname&gt</code> - sets the name of the bot</li>
-          <li class="list-group-item"><code>>setstatus &ltstatus&gt</code> - sets the status the bot displays</li>
-          <li class="list-group-item"><code>>shutdown</code> - safely shuts down</li>
+            <li class="list-group-item"><code>>stat [text]</code> - Change the state of the game you play on the Bot / Bot Manager Only</li>
         </ul>
       </div>
 

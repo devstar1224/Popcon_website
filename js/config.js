@@ -11,7 +11,7 @@ function git_bot_url(){
 }
 
 function bot_invite_url(){
-    window.open('https://discordapp.com/oauth2/authorize?client_id=474229020012052484&permissions=0&scope=bot','newWindow');
+    window.open('https://discordapp.com/oauth2/authorize?client_id=474229020012052484&permissions=8&scope=bot','newWindow');
 }
 
 function paypal_donation_url(){
